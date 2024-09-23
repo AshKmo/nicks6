@@ -1,5 +1,3 @@
-#!/usr/local/bin/node
-
 const fs = require('fs');
 
 // prints its arguments to the console and returns the last one
