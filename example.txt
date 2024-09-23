@@ -1,3 +1,5 @@
+# This is an implementation of the factorial and Y combinator functions #
+
 (\let
 
 let (\f (\g g g) (\g f(\x g g x)) ) \rec
@@ -12,6 +14,8 @@ let (rec \fac \x
 	) ()
 ) \fac
 
+
+fac 6
 
 
 ) \x \f f x
