@@ -1,0 +1,17 @@
+(\let
+
+let (\f (\g g g) (\g f(\x g g x)) ) \rec
+
+let (\c \a \b [b, a].(c)) \if
+
+let (rec \fac \x
+	(
+		if (x = 0)
+		(\0 1)
+		(\0 x * fac(x - 1))
+	) ()
+) \fac
+
+
+
+) \x \f f x
