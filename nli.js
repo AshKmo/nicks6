@@ -117,12 +117,12 @@ function interpret(script, ctx) {
 				for (; i < script.length; i++) {
 					const c = script[i];
 
-					if (c === '\\') {
+					if (!escaped && c === '\\') {
 						escaped = true;
 						continue;
 					}
 
-					if (c === '#') {
+					if (!escaped && c === '#') {
 						break;
 					}
 
