@@ -2,10 +2,13 @@
 
 (\let
 
+# the Y combinator function (called 'rec' in this case) #
 let (\f (\g g g) (\g f(\x g g x)) ) \rec
 
+# a function called 'if' that accepts a condition and two values and then returns one based on the condition #
 let (\c \a \b [b, a].(c)) \if
 
+# the factorial function #
 let (rec \fac \x
 	(
 		if (x = 0)
@@ -15,6 +18,7 @@ let (rec \fac \x
 ) \fac
 
 
+# call the factorial function and return the result #
 fac 6
 
 
